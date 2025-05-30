@@ -33,7 +33,7 @@ Import the Library Management database to your (MySQL) database instance
 
 Update `src/main/resources/application.properties` with your database details.
 ```
-spring.datasource.url=jdbc:postgresql://localhost:5432/librarydb
+spring.datasource.url=jdbc:postgresql://localhost:3306/librarymanagement
 spring.datasource.username=your_username
 spring.datasource.password=your_password
  ```
