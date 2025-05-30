@@ -33,7 +33,7 @@ Import the Library Management database to your (MySQL) database instance
 
 Update `src/main/resources/application.properties` with your database details.
 ```
-spring.datasource.url=jdbc:postgresql://localhost:5432/librarydb
+spring.datasource.url=jdbc:postgresql://localhost:3306/librarymanagement
 spring.datasource.username=your_username
 spring.datasource.password=your_password
  ```
@@ -125,7 +125,7 @@ This endpoint fetches a list of all books available in the library database. It 
 
 #### 🔖 Request Format
 - **Method:** `GET`
-- **Endpoint:** `/api/books`
+- **Endpoint:** `/books`
 - **Content-Type:** `application/json`
 - **Authorization:** None (public endpoint)
 
@@ -172,7 +172,7 @@ This endpoint allows users to fetch details of a specific book using its **uniqu
 
 #### 🔖 Request Format
 - **Method:** `GET`
-- **Endpoint:** `/api/books/{id}`
+- **Endpoint:** `/books/{id}`
 - **Content-Type:** `application/json`
 - **Authorization:** None (public endpoint)
 - **Path Parameter:**
@@ -210,7 +210,7 @@ This endpoint allows users to update the details of an existing book in the libr
 
 #### 🔖 Request Format
 - **Method:** `PUT`
-- **Endpoint:** `/api/books/{id}`
+- **Endpoint:** `/books/{id}`
 - **Content-Type:** `application/json`
 - **Authorization:** None (public endpoint)
 - **Path Parameter:**
@@ -259,7 +259,7 @@ This endpoint allows users to **permanently remove** a book from the library dat
 
 #### 🔖 Request Format
 - **Method:** `DELETE`
-- **Endpoint:** `/api/books/{id}`
+- **Endpoint:** `/books/{id}`
 - **Content-Type:** `application/json`
 - **Authorization:** None (public endpoint)
 - **Path Parameter:**
